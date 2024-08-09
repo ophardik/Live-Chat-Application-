@@ -1,0 +1,122 @@
+@REM /* Message.css */
+
+@REM .chat {
+@REM   display: flex;
+@REM   align-items: flex-start;
+@REM   margin-bottom: 1rem;
+@REM }
+
+@REM .chat-start {
+@REM   flex-direction: row;
+@REM }
+
+@REM .chat-image {
+@REM   margin-right: 0.75rem; /* Tailwind CSS equivalent of 'mr-3' */
+@REM }
+
+@REM .avatar {
+@REM   display: flex;
+@REM   align-items: center;
+@REM }
+
+@REM .w-10 {
+@REM   width: 2.5rem; /* Tailwind CSS equivalent of 'w-10' */
+@REM   height: 2.5rem; /* Ensuring the height is the same as width */
+@REM   border-radius: 9999px; /* Full rounding for circle shape */
+@REM   overflow: hidden;
+@REM }
+
+@REM .chat-header {
+@REM   display: flex;
+@REM   flex-direction: column;
+@REM   justify-content: center;
+@REM }
+
+@REM .text-xs {
+@REM   font-size: 0.75rem; /* Tailwind CSS equivalent of 'text-xs' */
+@REM }
+
+@REM .opacity-50 {
+@REM   opacity: 0.5; /* Tailwind CSS equivalent of 'opacity-50' */
+@REM }
+
+@REM .chat-bubble {
+@REM   max-width: 75%; /* Limiting the width of the chat bubble */
+@REM   background-color: #e5e7eb; /* Tailwind CSS equivalent of 'bg-gray-200' */
+@REM   padding: 0.75rem 1rem; /* Tailwind CSS equivalent of 'py-3 px-4' */
+@REM   border-radius: 0.5rem; /* Tailwind CSS equivalent of 'rounded-lg' */
+@REM   position: relative;
+@REM }
+
+@REM .chat-bubble::before {
+@REM   content: '';
+@REM   position: absolute;
+@REM   top: 0;
+@REM   left: -0.5rem;
+@REM   width: 0;
+@REM   height: 0;
+@REM   border-width: 0.5rem;
+@REM   border-style: solid;
+@REM   border-color: transparent transparent transparent #e5e7eb; /* Tailwind CSS equivalent of 'bg-gray-200' */
+@REM }
+/* Message.css */
+
+.chat {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.chat-start {
+  justify-content: flex-start;
+}
+
+.chat-image {
+  margin-right: 0.75rem;
+}
+
+.chat-image .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-10 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.chat-bubble {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  max-width: 70%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.chat-bubble::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #007bff transparent transparent;
+}

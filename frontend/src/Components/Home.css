@@ -1,0 +1,17 @@
+.home-container {
+  display: flex;
+  height: 450px; /* Default height for small screens */
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  overflow: hidden;
+  background-color: #9ca3af; /* Tailwind's bg-gray-400 */
+  background-clip: padding-box;
+  backdrop-filter: blur(10px); /* Tailwind's backdrop-filter and backdrop-blur-lg */
+  opacity: 1; /* Changed from 0 to 1 to make it visible */
+}
+
+/* Adjustments for medium screens and up */
+@media (min-width: 768px) {
+  .home-container {
+    height: 550px; /* Tailwind's md:h-[550px] */
+  }
+}

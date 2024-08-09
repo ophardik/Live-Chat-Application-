@@ -1,0 +1,38 @@
+/* OtherUser.css */
+
+.other-user-container {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem; /* Tailwind CSS equivalent of 'py-3 px-4' */
+  background-color: #f3f4f6; /* Tailwind CSS equivalent of 'bg-gray-100' */
+  margin-bottom: 0.5rem; /* Adding some margin between user entries */
+  border-radius: 0.5rem; /* Tailwind CSS equivalent of 'rounded-lg' */
+}
+
+.other-user-avatar {
+  margin-right: 1rem; /* Tailwind CSS equivalent of 'mr-4' */
+}
+
+.other-user-avatar img {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Ensure the height is the same as width */
+  border-radius: 50%; /* Full rounding for circle shape */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.other-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-user-info {
+  font-size: 1rem; /* Tailwind CSS equivalent of 'text-base' */
+  color: #111827; /* Tailwind CSS equivalent of 'text-gray-900' */
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e7eb; /* Tailwind CSS equivalent of 'bg-gray-200' */
+  margin-top: 0.75rem; /* Tailwind CSS equivalent of 'mt-3' */
+}
